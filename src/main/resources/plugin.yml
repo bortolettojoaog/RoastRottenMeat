@@ -1,4 +1,4 @@
-name: RoastRotten
+name: RoastRottenMeat
 version: '${project.version}'
 main: com.bortoletto.joaog.roastrotten.RoastRotten
 api-version: '1.21'
