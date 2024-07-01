@@ -29,6 +29,18 @@ public final class RoastRotten extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(Message.prefix + " §aPlugin habilitado com sucesso!");
 
         Bukkit.getPluginManager().registerEvents(new FurnaceEvent(), this);
+
+        NamespacedKey key = new NamespacedKey(this, "custom_furnace_recipe");
+
+        CustomFurnaceRecipe customFurnaceRecipe = new CustomFurnaceRecipe(
+                key,
+                new ItemStack(Material.LEATHER),
+                new RecipeChoice.MaterialChoice(Material.ROTTEN_FLESH),
+                0.1f,
+                200
+        );
+
+        Bukkit.getServer().addRecipe(customFurnaceRecipe);
     }
 
     @Override
