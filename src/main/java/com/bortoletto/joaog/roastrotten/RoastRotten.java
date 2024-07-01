@@ -27,6 +27,8 @@ public final class RoastRotten extends JavaPlugin {
     public void onEnable() {
         instance = this;
         Bukkit.getConsoleSender().sendMessage(Message.prefix + " §aPlugin habilitado com sucesso!");
+
+        Bukkit.getPluginManager().registerEvents(new FurnaceEvent(), this);
     }
 
     @Override
