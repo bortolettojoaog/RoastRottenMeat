@@ -1,0 +1,8 @@
+name: RoastRotten
+version: '${project.version}'
+main: com.bortoletto.joaog.roastrotten.RoastRotten
+api-version: '1.21'
+prefix: [RRM]
+authors: [Bortoletto João G.]
+description: Roast rotten meat for leather
+website: bortoletto.joaog.com
